@@ -1,30 +1,12 @@
 ## -*- coding: utf-8 -*-
 """
 ###   Python数据分析基础教程（DaPy）
-###   代码档 DaPy_code.py
-###   函数库 DaPy_fun.py
-###   数据框 DaPy_data.xlsx
+###   书中例子代码 DaPy_code.py
+###   自定义函数 DaPy_fun.py
+###   例子数据集 DaPy_data.xlsx
 ###   王斌会 王术 2019-6-19
 """
 
-### 初始化
-%run init.py
-#import DaPy_fun *
-
-### 读数据csv（本地）
-#BSdata=pd.read_csv('BSdata.csv',encoding='utf-8'); BSdata[:6]
-### 读数据csv（云端）
-#url1='http://leanote.com/api/file/getAttach?fileId=5abbb388ab6441507e002161'
-#dat1=pd.read_csv(url1,encoding='utf-8'); dat1
-
-### 读数据xlsx（本地）
-import pandas as pd                        #加载数据分析包
-BSdata=pd.read_excel('DaPy_data.xlsx','BSdata'); BSdata[:6]
-### 读数据csv（云端）
-#url2='http://leanote.com/api/file/getAttach?fileId=5abbb3aaab6441507e002167'
-#dat2=pd.read_excel(url2,'BSdata'); dat2
-
-#
 #第1章 数据收集与软件应用
 ##1.3 Python编程基础
 #### 1.3.1.1 Python的工作目录
@@ -1136,9 +1118,6 @@ n_s18.sort_values(by='ballot').iloc[-10:,[0,1,2,3,4,5,11]] #18年6月1日前中�
 plt.plot(n_s18.amount,n_s18.ballot,'o'); #发行量和中签率之间的散点图
 n_s18.amount.corr(n_s18.ballot)          #发行量和中签率之间的相关系数
 
-
-
-
 ##10.2 证券交易数据的分析
 ### 10.2.1 股票行情数据分析
 #### 10.2.1 历史行情数据分析
@@ -1169,7 +1148,6 @@ down=t_a['changepercent'].sort_values().head(10).index #跌幅最大的10个行�
 t_a.loc[down,['code','name','changepercent','trade','settlement','turnoverratio']]
 up=t_a['changepercent'].sort_values().t_ail(10).index   #涨幅最大的10个行业
 t_a.loc[up,['code','name','changepercent','trade','settlement','turnoverratio']]
-
 
 #### 10.2.3 大单交易数据分析
 s_d=ts.get_sina_dd('002024', date='2019-10-30',vol=400) #默认400手

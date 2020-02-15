@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 """
 ###   Python数据分析基础教程
-###    函数库 DaPy_fun.py
+###   自定义函数库 DaPy_fun.py
 ###   王斌会 王术 2018-6-1
-（1）安装库：将DaPy_fun.py文档拷贝到当前工作目录下
-（2）调用包：from DaPy_fun import *
-（3）使用函数：tab(x)
+     （1）安装库：将DaPy_fun.py文档拷贝到当前工作目录下
+     （2）调用包：from DaPy_fun import *
+     （3）使用函数：tab(x)
 """
 
 import numpy as np
